@@ -25,14 +25,18 @@ class IntroScreen extends StatelessWidget {
             alignment: Alignment.center,
             children: <Widget>[
               Positioned(
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: const <Widget>[
-                  ImageListView(startIndex: 0),
-                  ImageListView(startIndex: 1),
-                  ImageListView(startIndex: 2),
+                
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: const <Widget>[
+                      ImageListView(startIndex: 0),
+                      ImageListView(startIndex: 1),
+
                 ],
-              )),
+              ),
+                  )),
               // title
 
               Positioned(

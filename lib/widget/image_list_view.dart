@@ -47,7 +47,7 @@ class _ImageListViewState extends State<ImageListView> {
     return Transform.rotate(
       angle: 1.96 * pi,
       child: SizedBox(
-        width: MediaQuery.of(context).size.width * .6,
+        width: MediaQuery.of(context).size.width * 0.6,
         height: MediaQuery.of(context).size.height * .6,
         child: ListView.builder(
           controller: _scrollController,
@@ -62,7 +62,7 @@ class _ImageListViewState extends State<ImageListView> {
                   right: 8.0,
                   top: 10.0,
                 ),
-                height: MediaQuery.of(context).size.height* .4,
+                height: MediaQuery.of(context).size.height * .4,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: imageProvider,
